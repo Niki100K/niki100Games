@@ -571,23 +571,18 @@
         width: 100%;
         margin-top: 16px;
     }
-    .Profile .section .cardInfo .correctCard .part .manage h2 {
-        font-size: 18px;
+    .Profile .section .cardInfo .correctCard .text input {
+        width: 100%;
     }
-    .Profile .section .cardInfo .correctCard .cart .games .game .infoGame h2 {
-        font-size: 18px;
-    }
-    .Profile .section .cardInfo .correctCard .cart .games .game .infoGame p {
-        font-size: 16px;
-    }
-    .Profile .section .cardInfo .correctCard .cart .games .game .infoGame strong {
-        font-size: 18px;
-    }
-    .Profile .section .cardInfo .correctCard .cart .games .game .infoGame strong span {
-        font-size: 18px;
-    }
+    .Profile .section .cardInfo .correctCard .cart .games .game .infoGame p,
     .Profile .section .cardInfo .correctCard .cart .games .game .infoGame .btn button {
         font-size: 16px;
+    }
+    .Profile .section .cardInfo .correctCard .cart .games .game .infoGame strong,
+    .Profile .section .cardInfo .correctCard .cart .games .game .infoGame strong span,
+    .Profile .section .cardInfo .correctCard .cart .games .game .infoGame h2,
+    .Profile .section .cardInfo .correctCard .part .manage h2  {
+        font-size: 18px;
     }
     .Profile .section .cardInfo .correctCard .cart .games .game .infoGame button:nth-child(5) {
         width: 100%;
@@ -600,10 +595,5 @@
     }
     .Profile .section .cardInfo .correctCard .text h2 {
         font-size: 20px;
-    }
-}
-@media (Max-width: 340px) {
-    .Profile .section .cardInfo .correctCard .text input {
-        width: 100%;
     }
 }

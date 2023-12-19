@@ -115,7 +115,6 @@ const Register = () => {
 
   return (
     <>
-    <div className='backgroundBLACK'></div>
     <div className='Register'>
       <div className='con'>
         {inputs.map((input, index) => (

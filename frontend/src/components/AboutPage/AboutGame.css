@@ -54,6 +54,7 @@
 }
 .AboutGame .con .about .game .info p {
     font-family: var(--Font2);
+    color: orange;
 }
 .AboutGame .con .about .game .stars {
     width: 100%;

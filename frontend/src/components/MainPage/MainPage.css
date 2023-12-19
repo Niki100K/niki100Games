@@ -192,7 +192,7 @@
     text-transform: capitalize;
     color: var(--White1);
     background: var(--Dark1);
-    box-shadow: 2px 2px 4px orange;
+    border: 1px solid var(--White1);
 }
 
 

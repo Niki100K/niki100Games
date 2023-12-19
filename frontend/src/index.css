@@ -15,20 +15,13 @@
   --Font4: 'Karla', sans-serif;
 }
 body {
-  background: var(--White1);
-  background: #4618ac;
+  background: var(--Dark1);
 }
 .background {
   position: fixed;
   width: 100%;
   height: 100%;
   background: var(--White1);
-}
-.backgroundBLACK {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: var(--Dark1);
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
