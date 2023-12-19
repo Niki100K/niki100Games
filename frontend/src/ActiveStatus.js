@@ -24,7 +24,7 @@ export const ActiveProvider = ({ children }) => {
     setOrdersData([])
   }
 
-  const API = 'http://localhost:3004'
+  const API = 'https://niki100games-8060e023c5fc.herokuapp.com'
 
   useEffect(() => {
     const fetchData = async () => {
