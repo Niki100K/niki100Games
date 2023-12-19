@@ -85,6 +85,7 @@
 .AboutGame .con .about .moreGames .header h2 {
     font-family: var(--Font2);
     font-size: 32px;
+    color: var(--White1);
 }
 .AboutGame .con .about .moreGames .games {
     width: 100%;
