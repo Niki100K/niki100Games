@@ -125,6 +125,7 @@ const Register = () => {
               value={input.valie}
               onChange={(e) => handleChangeValue(input.field, e, input.maxSymbols)}
               placeholder=''
+              autoComplete='false'
             />
             <label htmlFor={input.id}>{input.icon && <input.icon className='icon'/>}{input.label}</label>
             {validForm[input.field] && <p>Please enter a value.</p>}

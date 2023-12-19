@@ -265,7 +265,6 @@ app.post('/updateData', (req, res) => {
 app.post('/register', async  (req, res) => {
     const { formData } = req.body
     try {
-        const hashedPassword = await  bcrypt.hash(formData.password, 10)
         db.query(
             "SELECT * FROM users WHERE email = ?",
             [formData.email],
@@ -279,7 +278,7 @@ app.post('/register', async  (req, res) => {
                     } else {
                         db.query(
                             `INSERT INTO users (firstName, lastName, email, phone, password) VALUES
-                            ('${formData.firstName}','${formData.lastName}','${formData.email}','${formData.phone}','${hashedPassword}')`,
+                            ('${formData.firstName}','${formData.lastName}','${formData.email}','${formData.phone}','${formData.password}')`,
                             (err, results) => {
                                 if (err) {
                                     console.log(err);
