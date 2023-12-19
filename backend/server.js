@@ -6,7 +6,7 @@ const app = express();
 require('dotenv').config()
 
 const corsOptions = {
-    origin: ['http://localhost:3000'],
+    origin: ['https://inspiring-gaufre-1c79a8.netlify.app'],
     optionsSuccessStatus: 200,
 };
 
