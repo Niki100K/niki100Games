@@ -1,0 +1,480 @@
+.MainPage {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.MainPage .con {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.MainPage .settings {
+    margin-top: 48px;
+    position: sticky;
+    top: 48px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 32px 0;
+    border-radius: 16px;
+}
+.MainPage .settings .category {
+    width: 80%;
+    max-height: 264px;
+    overflow: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 24px;
+}
+.MainPage .settings .category::-webkit-scrollbar {
+    width: 8px;
+}
+.MainPage .settings .category::-webkit-scrollbar-thumb {
+    background: orange;
+    border-radius: 6px;
+}
+.MainPage .settings h3 {
+    width: 100%;
+    color: orange;
+    padding-left: 8px;
+    font-family: var(--Font4);
+}
+.MainPage .settings p {
+    width: 100%;
+    text-align: center;
+    padding: 4px;
+    font-size: 14px;
+    margin: 2px 0;
+    cursor: pointer;
+    color: var(--White1);
+    font-family: var(--Font2);
+}
+.MainPage .settings p:hover:not(.active) {
+    background: var(--Dark1);
+    color: orange;
+}
+.MainPage .settings p.active {
+    background: orange;
+}
+
+.MainPage .settings .price-range,
+.MainPage .settings .price-sort {
+    width: 80%;
+    max-height: 344px;
+    overflow: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 24px;
+}
+
+
+
+
+
+.MainPage .games-con {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 24px;
+}
+.MainPage .games-con .game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 8px 0;
+    border: 1px solid var(--Dark1);
+    border-radius: 18px 18px 8px 8px;
+    text-decoration: none;
+}
+.MainPage .games-con .game .img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+.MainPage .games-con .game .img img {
+    width: 100%;
+    height: 100%;
+}
+.MainPage .games-con .game .info {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4px;
+}
+.MainPage .games-con .game .info h2 {
+    width: 100%;
+    font-size: 14px;
+    color: orange;
+}
+.MainPage .games-con .game .info p {
+    width: 100%;
+    color: var(--White1);
+    font-family: var(--Font2);
+}
+.MainPage .games-con .game .info span {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--White1);
+    font-family: var(--Font4);
+}
+
+
+.MainPage .pagination {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    margin: 24px 0;
+}
+.MainPage .pagination button {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--Dark1);
+    background: transparent;
+    color: var(--White1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.MainPage .pagination button:hover {
+    background: var(--Light1);
+}
+.MainPage .pagination button.active {
+    background: orange;
+}
+
+
+
+
+.MainPage .sticky-mobile-filter {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 24px;
+}
+.MainPage .sticky-mobile-filter p {
+    margin-right: 24px;
+    border: 1px solid var(--Dark1);
+    padding: 4px 20px;
+    border-radius: 4px;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: var(--White1);
+    background: var(--Dark1);
+    box-shadow: 2px 2px 4px orange;
+}
+
+
+@media (Max-width: 780px) {
+    .MainPage .settings {
+        display: none;
+    }
+    .MainPage .sticky-mobile-filter {
+        display: flex;
+    }
+}
+@media (Max-width: 680px) {
+    .MainPage .games-con .game .info {
+        min-height: 80px;
+    }
+    .MainPage .games-con .game .info h2 {
+        font-size: 12px;
+    }
+    .MainPage .games-con .game .info p {
+        font-size: 12px;
+    }
+    .MainPage .games-con .game .info span {
+        font-size: 12px;
+    }
+}
+@media (Max-width: 380px) {
+    .MainPage .games-con .game .info {
+        min-height: 80px;
+    }
+    .MainPage .games-con .game .info h2 {
+        font-size: 10px;
+        font-weight: 100;
+    }
+    .MainPage .games-con .game .info p {
+        font-size: 10px;
+    }
+    .MainPage .games-con .game .info span {
+        font-size: 12px;
+    }
+
+    .MainPage .pagination {
+        padding: 24px 8px;
+    }
+    .MainPage .pagination button {
+        font-size: 18px;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+
+
+.mobile-settings {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    background: var(--Dark1);
+    z-index: 2;
+    overflow: auto;
+}
+.mobile-settings.show {
+    height: 100%;
+    transition: .4s;
+}
+@media (min-width: 780px) {
+    .mobile-settings {
+        display: none;
+    }
+}
+.mobile-settings .sticky-btn {
+    position: sticky;
+    top: 0;
+    margin-bottom: 16px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: var(--Dark1);
+}
+.mobile-settings .sticky-btn .icon {
+    font-size: 32px;
+    transform: rotate(90deg);
+    color: var(--White1);
+}
+.mobile-settings .sticky-btn p {
+    font-size: 24px;
+    color: var(--White1);
+    text-transform: capitalize;
+}
+
+.mobile-settings .search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+.mobile-settings .search h3 {
+    font-size: 28px;
+    font-weight: 100;
+    width: 100%;
+    text-align: center;
+    background: orange;
+    border: 1px solid var(--Dark1);
+    border-radius: 4px;
+    color: var(--White1);
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+.mobile-settings .search input {
+    font-size: 20px;
+    width: 80%;
+    background: transparent;
+    border: 1px solid var(--White1);
+    padding: 4px 8px;
+    color: var(--White1);
+    outline: none;
+    border-radius: 4px;
+}
+.mobile-settings .search input:focus,
+.mobile-settings .search input:not(:placeholder-shown) {
+    border: 1px solid var(--Light1);
+}
+.mobile-settings .search input::placeholder {
+    color: var(--White1);
+}
+.mobile-settings .search .results {
+    width: 100%;
+    margin: 16px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.mobile-settings .search .results .line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4px 8px;
+    margin: 2px 0;
+    border: 1px solid var(--Middle1);
+}
+.mobile-settings .search .results a {
+    text-decoration: none;
+}
+.mobile-settings .search .results .line p {
+    margin-bottom: unset;
+    color: var(--White1);
+    font-size: 20px;
+    font-family: var(--Font2);
+    max-width: 70%;
+}
+.mobile-settings .search .results .line h6 {
+    color: var(--White1);
+    font-weight: 100;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.mobile-settings .search .results .line span {
+    color: orange;
+    margin-right: 8px;
+    font-family: var(--Font2);
+}
+
+.mobile-settings :where(.category, .priceRange, .priceSort) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+.mobile-settings h2 {
+    width: 95%;
+    padding: 8px;
+    font-size: 32px;
+    color: var(--White1);
+    font-family: var(--Font2);
+    text-align: center;
+    background: orange;
+}
+.mobile-settings .con {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: .4s ;
+}
+.mobile-settings :where(.category, .priceRange, .priceSort) p {
+    width: 32%;
+    height: 40px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 1px solid var(--Dark1);
+    padding: 4px;
+    border-radius: 4px;
+    color: var(--White1);
+    font-family: var(--Font2);
+    border: 1px solid var(--Middle1);
+    margin: 4px 2px;
+}
+.mobile-settings .priceRange .con p,
+.mobile-settings .priceSort .con p {
+    width: 48%;
+}
+.mobile-settings p.active {
+    background: var(--Middle1);
+}
+.mobile-settings .category button {
+    position: relative;
+    width: 96%;
+    font-size: 24px;
+    margin: 4px;
+    border-radius: 4px;
+    background: var(--Middle1);
+    color: var(--White1);
+    border: 1px solid var(--Dark1);
+    text-transform: capitalize;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.mobile-settings .category button .icon {
+    position: absolute;
+    right: 0;
+    font-size: 48px;
+    transition: .4s;
+}
+.mobile-settings .category button .icon.rotate {
+    transform: rotate(180deg);
+}
+
+
+@media (Max-width: 680px) {
+    .mobile-settings h2 {
+        font-size: 24px;
+    }
+}
+@media (max-width: 480px) {
+    .mobile-settings .search input {
+        width: 100%;
+    }
+    .mobile-settings .category .con {
+        height: 96px;
+    }
+    .mobile-settings .category .con.show {
+        height: 336px;
+    }
+    .mobile-settings .category .con p {
+        width: 48%;
+    }
+    .mobile-settings .category button {
+        display: flex;
+    }
+}
+@media (max-width: 380px) {
+    .mobile-settings h2 {
+        margin: 12px 0 4px;
+        font-size: 20px !important;
+    }
+    .mobile-settings .category button {
+        font-size: 20px;
+    }
+    .mobile-settings .category button .icon {
+        font-size: 32px;
+    }
+    .mobile-settings :where(.category, .priceRange, .priceSort) p {
+        font-size: 16px;
+    }
+}   

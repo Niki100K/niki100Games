@@ -1,0 +1,609 @@
+.Profile {
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 8px;
+}
+
+
+/*  */
+
+
+
+.Profile .section {
+    max-width: 1400px;
+    width: 100%;
+    background: var(--White1);
+    margin-bottom: 128px;
+}
+.Profile .section .header {
+    width: 100%;
+    padding: 8px;
+}
+.Profile .section .header h2 {
+    font-family: var(--Font2);
+}
+.Profile .section .cardsCon {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.Profile .section .cardsCon .card {
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px 1px rgba(204,204,204,1);
+    margin: 16px 0;
+    padding: 24px 8px;
+    cursor: pointer;
+}
+.Profile .section .cardsCon .card.hide {
+    display: none;
+}
+.Profile .section .cardsCon .card:hover,
+.Profile .section .cardsCon .card.color {
+    background: var(--Dark1);
+}
+.Profile .section .cardsCon .card #icon {
+    font-size: 32px;
+    margin: 0 8px;
+    color: var(--Dark1);
+}
+.Profile .section .cardsCon .card:hover #icon,
+.Profile .section .cardsCon .card.color #icon {
+    color: var(--White1);
+}
+.Profile .section .cardsCon .card p {
+    font-family: var(--Font2);
+    font-size: 20px;
+}
+.Profile .section .cardsCon .card:hover p,
+.Profile .section .cardsCon .card.color p {
+    color: var(--White1);
+}
+
+.Profile .section .cardInfo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 32px 0;
+}
+
+.Profile .section .cardInfo .correctCard {
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 8px;
+    margin-top: 32px;
+}
+.Profile .section .cardInfo .correctCard.show {
+    display: flex;
+}
+.Profile .section .cardInfo .correctCard .text {
+    width: 100%;
+    padding: 8px 16px;
+    margin-bottom: 32px;
+    background: var(--Dark1);
+    border-radius: 8px 8px 4px 4px;
+}
+.Profile .section .cardInfo .correctCard .text h2 {
+    font-family: var(--Font2);
+    font-size: 40px;
+    color: var(--White1);
+}
+.Profile .section .cardInfo .correctCard .text input {
+    margin: 8px 0;
+    font-size: 18px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid var(--Dark1);
+    padding: 4px 8px;
+}
+.Profile .section .cardInfo .correctCard .part {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4px 16px;
+    box-shadow: 0 2px 4px rgba(204,204,204,1);
+    margin-top: 16px;
+}
+.Profile .section .cardInfo .correctCard .part .manage {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Profile .section .cardInfo .correctCard .part .manage h2 {
+    width: 120px;
+    overflow: hidden;
+    color: var(--Dark1);
+    font-family: var(--Font2);
+}
+.Profile .section .cardInfo .correctCard .part .manage .p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Profile .section .cardInfo .correctCard .part .manage .p p {
+    font-family: var(--Font2);
+    max-width: 260px;
+    overflow: hidden;
+    color: var(--Middle1);
+    margin: 0 4px;
+}
+.Profile .section .cardInfo .correctCard .part .manage h2:nth-child(3) {
+    color: var(--Dark1);
+    font-weight: 200;
+    cursor: pointer;
+}
+.Profile .section .cardInfo .correctCard .part .manage h2:nth-child(3):hover,
+.Profile .section .cardInfo .correctCard .part .manage h2.bold  {
+    font-weight: bold;
+}
+.Profile .section .cardInfo .correctCard .buttons {
+    width: 100%;
+    margin-top: 16px;
+}
+.Profile .section .cardInfo .correctCard .buttons button {
+    font-size: 18px;
+    padding: 2px 8px;
+    background: var(--Dark1);
+    border-radius: 4px;
+    color: var(--White1);
+    cursor: pointer;
+    border: none;
+}
+.Profile .section .cardInfo .correctCard .update {
+    width: 100%;
+    margin: 16px 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Profile .section .cardInfo .correctCard .update.show {
+    display: flex;
+}
+.Profile .section .cardInfo .correctCard .update .inputs {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Profile .section .cardInfo .correctCard .update .inputs .input {
+    position: relative;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}
+.Profile .section .cardInfo .correctCard .update .inputs .input input {
+    width: 100%;
+    font-size: 20px;
+    padding: 8px 4px 4px;
+    outline: none;
+    border: 1px solid var(--Middle1);
+    border-radius: 4px;
+}
+.Profile .section .cardInfo .correctCard .update .inputs .input label {
+    position: absolute;
+    left: 8px;
+    font-size: 20px;
+    pointer-events: none;
+    font-family: var(--Font2);
+    background: var(--White1);
+}
+.Profile .section .cardInfo .correctCard .update .inputs .input input:focus + label,
+.Profile .section .cardInfo .correctCard .update .inputs .input input:not(:placeholder-shown) + label {
+    transform: translateY(-100%) scale(.8);
+    left: 0;
+}
+.Profile .section .cardInfo .correctCard .update .inputs .input p {
+    position: absolute;
+    color: red;
+    top: 100%;
+    left: 4px;
+    font-size: 14px;
+    font-family: var(--Font2);
+}
+.Profile .section .cardInfo .correctCard .info {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 8px 0;
+}
+.Profile .section .cardInfo .correctCard .info p {
+    width: 20%;
+    text-align: center;
+    cursor: cell;
+}
+.Profile .section .cardInfo .correctCard .info p .arrow {
+    opacity: 0;
+}
+.Profile .section .cardInfo .correctCard .info p .arrow.one {
+    opacity: 1;
+}
+.Profile .section .cardInfo .correctCard .info p .arrow.two {
+    opacity: 1;
+    transform: rotate(180deg);
+}
+.Profile .section .cardInfo .correctCard .order {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 8px 0;
+    box-shadow: 0 2px 4px rgba(204,204,204,1);
+}
+.Profile .section .cardInfo .correctCard .order .data {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.Profile .section .cardInfo .correctCard .order .data a {
+    color: var(--Light1);
+}
+.Profile .section .cardInfo .correctCard .order .data a:hover {
+    color: var(--Dark1);
+}
+.Profile .section .cardInfo .correctCard .imgCon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Profile .section .cardInfo .correctCard .imgCon .img {
+    max-width: 340px;
+    width: 100%;
+}
+.Profile .section .cardInfo .correctCard .imgCon .img img {
+    width: 100%;
+}
+
+.Profile .section .cardInfo .correctCard .cart {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.Profile .section .cardInfo .correctCard .cart .games {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.Profile .section .cardInfo .correctCard .cart .games .game {
+    max-width: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: 0px 0px 5px 1px rgba(204,204,204,1);
+    margin-top: 32px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.Profile .section .cardInfo .correctCard .cart .games .game .img {
+    border-radius: 8px;
+    overflow: hidden;
+}
+.Profile .section .cardInfo .correctCard .cart .games .game .img img {
+    width: 100%;
+    height: 100%;
+}
+.Profile .section .cardInfo .correctCard .cart .games .game .infoGame {
+    padding: 8px;
+}
+.Profile .section .cardInfo .correctCard .cart .games .game .infoGame h2 {
+    font-family: var(--Font2);
+    color: var(--Middle1);
+}
+.Profile .section .cardInfo .correctCard .cart .games .game .infoGame p {
+    font-family: var(--Font4);
+    color: var(--Dark1);
+    text-decoration: underline;
+    border-radius: 4px;
+    text-align: center;
+    transform: skew(-16deg);
+    padding: 4px 8px;
+    font-size: 20px;
+    margin: 8px 0;
+}
+.Profile .section .cardInfo .correctCard .cart .games .game .infoGame strong {
+    font-family: var(--Font3);
+    font-size: 24px;
+}
+.Profile .section .cardInfo .correctCard .cart .games .game .infoGame strong span {
+    font-weight: 100;
+    font-family: var(--Font2);
+    font-size: 24px;
+}
+.Profile .section .cardInfo .correctCard .cart .games .game .infoGame .btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Profile .section .cardInfo .correctCard .cart .games .game .infoGame .btn button {
+    width: 30%;
+    margin: 8px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background: var(--Dark1);
+    color: var(--White1);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.Profile .section .cardInfo .correctCard .cart .games .game .infoGame .btn button:hover {
+    opacity: .9;
+}
+.Profile .section .cardInfo .correctCard .cart .games .game .infoGame .btn input {
+    width: 30%;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+}
+.Profile .section .cardInfo .correctCard .cart .games .game .infoGame button:nth-child(5) {
+    width: 30%;
+    font-size: 18px;
+    cursor: pointer;
+    background: transparent;
+    color: var(--Dark1);
+    border: none;
+    border-radius: 4px;
+}
+.Profile .section .cardInfo .correctCard .cart .games .game .infoGame button:nth-child(5):hover {
+    background: red;
+    color: var(--White1);
+}
+.Profile .section .cardInfo .correctCard .cart .stiky {
+    position: sticky;
+    top: 0;
+    max-width: 40%;
+    width: 100%;
+    padding: 24px;
+}
+.Profile .section .cardInfo .correctCard .cart .stiky .box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 1px rgba(204,204,204,1);
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+.Profile .section .cardInfo .correctCard .cart .stiky .box h2 {
+    font-family: var(--Font2);
+}
+.Profile .section .cardInfo .correctCard .cart .stiky .box .line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 8px;
+}
+.Profile .section .cardInfo .correctCard .cart .stiky .box .line p {
+    max-width: 75%;
+}
+.Profile .section .cardInfo .correctCard .cart .stiky .box .line p:nth-child(2) {
+    font-family: var(--Font2);
+}
+.Profile .section .cardInfo .correctCard .cart .stiky .total {
+    border-top: 1px solid var(--Dark1);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Profile .section .cardInfo .correctCard .cart .stiky .total .earch {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Profile .section .cardInfo .correctCard .cart .stiky .total .earch strong {
+    font-size: 20px;
+}
+.Profile .section .cardInfo .correctCard .cart .stiky .total .earch p {
+    font-family: var(--Font1);
+}
+.Profile .section .cardInfo .correctCard .cart .stiky .box .btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 18px 0;
+}
+.Profile .section .cardInfo .correctCard .cart .stiky .box .btn button {
+    font-size: 18px;
+    padding: 2px 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background: var(--Dark1);
+    color: var(--White1);
+    margin: 4px;
+}
+.Profile .section .cardInfo .correctCard .cart .stiky .box .btn button:nth-child(2) {
+    background: orange;
+}
+.Profile .section .cardInfo .correctCard .cart .stiky .box .btn button:hover {
+    opacity: .8;
+}
+
+.Profile .section .cardInfo .correctCard .order .mobile-data {
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 8px;
+    padding: 0 8px;
+}
+.Profile .section .cardInfo .correctCard .order .mobile-data strong {
+    color: var(--Dark1);
+    font-family: var(--Font4);
+}
+.Profile .section .cardInfo .correctCard .order .mobile-data p {
+    color: var(--Middle1);
+    font-family: var(--Font2);
+}
+.Profile .section .cardInfo .correctCard .order .mobile-data a {
+    color: var(--Light1);
+}
+.Profile .section .cardInfo .correctCard .order .mobile-data a:hover {
+    color: var(--Dark1);
+}
+
+@media (Max-width: 1100px) {
+    .Profile .section .cardInfo .correctCard {
+        padding-left: unset;
+    }
+    .Profile .section .cardInfo .correctCard .part {
+        width: 100%;
+    }
+    .Profile .section .cardInfo .correctCard .info {
+        width: 100%;
+    }
+    .Profile .section .cardInfo .correctCard .order {
+        width: 100%;
+    }
+}
+@media (max-width: 880px) {
+    .Profile .section .cardInfo .correctCard .cart {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .Profile .section .cardInfo .correctCard .cart .games {
+        width: 100%;
+    }
+    .Profile .section .cardInfo .correctCard .cart .games .game {
+        max-width: unset;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .Profile .section .cardInfo .correctCard .cart .stiky {
+        position: relative;
+        max-width: unset;
+        padding: 8px;
+        margin-top: 32px;
+    }
+}
+@media (Max-width: 720px) {
+    .Profile .section .cardsCon .card {
+        width: 45%;
+    }
+}
+@media (max-width: 680px) {
+    .Profile .section .cardInfo .correctCard .update .inputs .input input,
+    .Profile .section .cardInfo .correctCard .update .inputs .input label {
+        font-size: 16px;
+    }
+    .Profile .section .cardInfo .correctCard .text h2 {
+        font-size: 32px;
+    }
+}
+@media (max-width: 540px) {
+    .Profile .section .cardsCon .card {
+        width: 100%;
+        margin: 8px 0 0;
+    }
+    .Profile .section .cardInfo .correctCard .info {
+        display: none;
+    }
+    .Profile .section .cardInfo .correctCard .part {
+        padding: 4px 0;
+    }
+    .Profile .section .cardInfo .correctCard .order {
+        flex-direction: column;
+    }
+    .Profile .section .cardInfo .correctCard .order .data {
+        display: none;
+    }
+    .Profile .section .cardInfo .correctCard .order .mobile-data {
+        display: flex;
+    }
+    .Profile .section .cardInfo .correctCard .part .manage {
+        padding: 0 8px;
+    }
+    .Profile .section .cardInfo .correctCard .part .manage h2 {
+        width: unset;
+    }
+    .Profile .section .cardInfo .correctCard .update .inputs {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .Profile .section .cardInfo .correctCard .update .inputs .input {
+        width: 45%;
+    }
+}
+@media (Max-width: 480px) {
+    .Profile .section .cardInfo .correctCard .part .manage .p {
+        display: none;
+    }
+}
+@media (max-width: 420px) {
+    .Profile .section .cardInfo .correctCard .update .inputs .input {
+        width: 100%;
+        margin-top: 16px;
+    }
+    .Profile .section .cardInfo .correctCard .part .manage h2 {
+        font-size: 18px;
+    }
+    .Profile .section .cardInfo .correctCard .cart .games .game .infoGame h2 {
+        font-size: 18px;
+    }
+    .Profile .section .cardInfo .correctCard .cart .games .game .infoGame p {
+        font-size: 16px;
+    }
+    .Profile .section .cardInfo .correctCard .cart .games .game .infoGame strong {
+        font-size: 18px;
+    }
+    .Profile .section .cardInfo .correctCard .cart .games .game .infoGame strong span {
+        font-size: 18px;
+    }
+    .Profile .section .cardInfo .correctCard .cart .games .game .infoGame .btn button {
+        font-size: 16px;
+    }
+    .Profile .section .cardInfo .correctCard .cart .games .game .infoGame button:nth-child(5) {
+        width: 100%;
+    }
+    .Profile .section .cardInfo .correctCard .cart .stiky {
+        padding: 0px;
+    }
+    .Profile .section .cardInfo .correctCard .cart .stiky .box {
+        padding: 8px 4px;
+    }
+    .Profile .section .cardInfo .correctCard .text h2 {
+        font-size: 20px;
+    }
+}
+@media (Max-width: 340px) {
+    .Profile .section .cardInfo .correctCard .text input {
+        width: 100%;
+    }
+}

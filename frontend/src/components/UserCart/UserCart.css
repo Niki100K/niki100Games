@@ -1,0 +1,293 @@
+.UserCart {
+    position: absolute;
+    top: 160px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.UserCart .con {
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.UserCart .con .games {
+    min-width: 50%;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.UserCart .con .games .game {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 16px;
+    box-shadow: 0px 0px 5px 1px rgba(204,204,204,1);
+    padding: 2px;
+}
+.UserCart .con .games .game .img {
+    border-radius: 8px;
+    overflow: hidden;
+}
+.UserCart .con .games .game .img img {
+    width: 100%;
+    height: 100%;
+}
+.UserCart .con .games .game .text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 8px;
+}
+.UserCart .con .games .game .text .namePrice {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.UserCart .con .games .game .text h2 {
+    font-family: var(--Font4);
+    color: var(--Dark1);
+}
+.UserCart .con .games .game .text p {
+    font-family: var(--Font2);
+}
+.UserCart .con .games .game .text strong {
+    color: var(--Dark1);
+    font-size: 24px;
+    margin-left: 8px;
+}
+.UserCart .con .games .game .text strong span {
+    font-family: var(--Font2);
+    color: var(--Middle1);
+    margin-right: 4px;
+}
+.UserCart .con .games .game .text .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0;
+}
+.UserCart .con .games .game .text .btn button {
+    font-size: 20px;
+    width: 50px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--Middle1);
+    border: none;
+    cursor: pointer;
+    color: var(--White1);
+    border-radius: 4px;
+}
+.UserCart .con .games .game .text .btn button:hover {
+    background: var(--Dark1);
+}
+.UserCart .con .games .game .text .btn input {
+    height: 30px;
+    width: 100px;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    color: var(--Dark1);
+}
+.UserCart .con .games .game .text .trash {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.UserCart .con .games .game .text .trash .icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    padding: 8px;
+    cursor: pointer;
+    color: var(--Middle1);
+}
+.UserCart .con .games .game .text .trash .icon:hover {
+    color: red;
+}
+.UserCart .con .sticky {
+    position: sticky;
+    top: 0;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+.UserCart .con .sticky .box {
+    width: 100%;
+    border-radius: 16px 16px 4px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px 8px;
+}
+.UserCart .con .sticky .box .header {
+    width: 100%;
+}
+.UserCart .con .sticky .box .header h2 {
+    font-family: var(--Font4);
+    color: var(--Dark1);
+    font-size: 32px;
+}
+.UserCart .con .sticky .box .prices,
+.UserCart .con .sticky .box .total {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.UserCart .con .sticky .box .prices {
+    margin-top: 16px;
+}
+.UserCart .con .sticky .box .total {
+    border-top: 2px solid var(--Dark1);
+}
+.UserCart .con .sticky .box .prices .game,
+.UserCart .con .sticky .box .total .sum {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4px;
+}
+.UserCart .con .sticky .box .total .sum {
+    margin-top: 4px;
+}
+.UserCart .con .sticky .box .prices .game {
+    align-items: flex-start;
+}
+.UserCart .con .sticky .box .prices .game p:nth-child(1) {
+    font-family: var(--Font4);
+    color: var(--Middle1);
+}
+.UserCart .con .sticky .box .prices .game p:nth-child(2) {
+    font-family: var(--Font2);
+}
+.UserCart .con .sticky .box .total .sum h3 {
+    font-family: var(--Font4);
+    font-size: 18px;
+    font-weight: 100;
+}
+.UserCart .con .sticky .box .total .sum p {
+    font-weight: bold;
+    font-family: var(--Font3);
+}
+.UserCart .con .sticky .box .total .sum p span {
+    font-family: var(--Font2);
+    font-weight: 100;
+    text-decoration: underline;
+}
+.UserCart .con .sticky .box .contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 16px;
+}
+.UserCart .con .sticky .box .contact h2 {
+    width: 100%;
+    font-family: var(--Font2);
+    color: var(--Middle1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+.UserCart .con .sticky .box .contact h2 .arrow {
+    color: var(--Dark1);
+}
+.UserCart .con .sticky .box .contact h2 .arrow.rotate {
+    transform: rotate(180deg);
+}
+.UserCart .con .sticky .box .contact .earch {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4px;
+}
+.UserCart .con .sticky .box .contact .earch p {
+    font-family: var(--Font2);
+    text-decoration: underline;
+}
+.UserCart .con .sticky .box .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+.UserCart .con .sticky .box .btn button {
+    width: 100%;
+    font-size: 24px;
+    padding: 2px 8px;
+    border-radius: 8px;
+    border: 1px solid var(--Dark1);
+    background: orange;
+    color: var(--White1);
+    cursor: pointer;
+    margin: 4px;
+}
+.UserCart .con .sticky .box .btn button:nth-child(1) {
+    background: var(--Dark1);
+}
+.UserCart .con .sticky .box .btn button:hover {
+    opacity: .8;
+}
+
+
+@media (Max-width: 720px) {
+    .UserCart .con {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 8px;
+    }
+    .UserCart .con .games {
+        max-width: unset;
+        width: 100%;
+    }
+    .UserCart .con .sticky {
+        width: 100%;
+        padding: 24px 0;
+    }
+    .UserCart .con h2 {
+        font-size: 20px !important;
+    }
+}
+@media (max-width: 420px) {
+    .UserCart .con .games .game .text h2 {
+        font-size: 18px !important;
+    }
+    .UserCart .con .games .game .text strong {
+        font-size: 18px;
+    }
+    .UserCart .con .games .game .text .btn {
+        width: 100%;
+    }
+    .UserCart .con .games .game .text .btn button {
+        width: 20%;
+    }
+    .UserCart .con .games .game .text .btn input {
+        width: 60%;
+    }
+}

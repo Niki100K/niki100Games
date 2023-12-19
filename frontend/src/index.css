@@ -1,0 +1,41 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+  --Dark1: #1A1C22;
+  --Middle1: #3D3A50;
+  --Light1: #580EF6;
+  --White1: #F7F7F7;
+  
+  --Font2: 'Roboto', sans-serif;
+  --Font3: 'Lato', sans-serif;
+  --Font4: 'Karla', sans-serif;
+}
+body {
+  background: var(--White1);
+  background: #4618ac;
+}
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: var(--White1);
+}
+.backgroundBLACK {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: var(--Dark1);
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: var(--Dark1);
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: inset 0 0 20px 20px #23232300;
+}

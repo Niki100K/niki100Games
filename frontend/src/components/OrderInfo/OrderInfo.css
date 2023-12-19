@@ -1,0 +1,188 @@
+.OrderInfo {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    flex-wrap: wrap;
+}
+.OrderInfo .con {
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 8px;
+}
+.OrderInfo .con .games {
+    max-width: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.OrderInfo .con .games .game {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 16px;
+}
+.OrderInfo .con .games .game .img {
+    border-radius: 4px;
+    overflow: hidden;
+}
+.OrderInfo .con .games .game .img img {
+    width: 100%;
+    height: 100%;
+}
+.OrderInfo .con .games .game .text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 8px;
+}
+.OrderInfo .con .games .game .text .info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.OrderInfo .con .games .game .text .info h2 {
+    font-family: var(--Font2);
+    color: var(--Dark1);
+}
+.OrderInfo .con .games .game .text .info p {
+    width: 20%;
+    text-align: end;
+    color: var(--Dark1);
+    font-size: 20px;
+    font-family: var(--Font4);
+}
+.OrderInfo .con .games .game .text .quantity h2 {
+    color: var(--Middle1);
+    font-size: 18px;
+    font-family: var(--Font2);
+}
+.OrderInfo .con .games .game .text .quantity h2 span {
+    margin-left: 8px;
+    font-family: var(--Font2);
+}
+.OrderInfo .con .games .game .text .total h2 {
+    font-family: var(--Font2);
+    font-size: 18px;
+    color: var(--Dark1);
+}
+.OrderInfo .con .games .game .text .total h2 span {
+    font-family: var(--Font2);
+    margin-left: 8px;
+}
+.OrderInfo .con .sticky {
+    position: sticky;
+    top: 24px;
+    max-width: 400px;
+    width: 100%;
+    padding: 0 8px;
+}
+.OrderInfo .con .sticky .box {
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 16px 16px 8px 8px;
+}
+.OrderInfo .con .sticky .box .info h2 {
+    font-family: var(--Font2);
+}
+.OrderInfo .con .sticky .box .manage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 16px 0;
+}
+.OrderInfo .con .sticky .box .manage .earch {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.OrderInfo .con .sticky .box .manage .earch p:nth-child(1) {
+    font-family: var(--Font4);
+    font-size: 20px;
+}
+.OrderInfo .con .sticky .box .manage .earch p:nth-child(2) {
+    font-family: var(--Font2);
+}
+.OrderInfo .con .sticky .box button {
+    width: 100%;
+    margin-top: 8px;
+    font-size: 24px;
+    border-radius: 4px;
+    border: 1px solid var(--Dark1);
+    padding: 8px;
+    cursor: pointer;
+    background: orange;
+    color: var(--White1);
+    text-transform: uppercase;
+}
+.OrderInfo .con .sticky .box button:hover {
+    background: rgb(255, 180, 40);
+}
+.OrderInfo .con .sticky .box button:nth-child(4) {
+    background: var(--Dark1);
+}
+
+@media (max-width: 880px) {
+    .OrderInfo .con .games .game .text .info {
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+@media (Max-width: 720px) {
+    .OrderInfo {
+        padding: 8px;
+    }
+    .OrderInfo .con {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: unset;
+    }
+    .OrderInfo .con .games {
+        max-width: 100%;
+    }
+    .OrderInfo .con .sticky {
+        position: relative;
+        max-width: unset;
+        padding: unset;
+    }
+    .OrderInfo .con .sticky .box {
+        padding: unset;
+    }
+}
+@media (max-width: 480px) {
+    .OrderInfo h2 {
+        font-size: 18px !important;
+    }
+    .OrderInfo p {
+        font-size: 16px !important;
+    }
+    .OrderInfo .con .sticky .box button {
+        font-size: 16px;
+    }
+}
+@media (max-width: 380px) {
+    .OrderInfo h2 {
+        font-size: 16px !important;
+    }
+}
