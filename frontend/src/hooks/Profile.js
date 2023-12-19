@@ -300,6 +300,7 @@ const Profile = () => {
     handleChangeWidth()
   }, [handleChangeWidth])
 
+  
   useEffect(() => {
     window.addEventListener("resize", handleChangeWidth)
     return () => {

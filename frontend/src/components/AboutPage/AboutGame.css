@@ -38,6 +38,16 @@
 .AboutGame .con .about .game .info {
     padding: 0 8px;
 }
+.AboutGame .con .about .game .info .name {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.AboutGame .con .about .game .info .name span {
+    color: orange;
+    width: 20%;
+}
 .AboutGame .con .about .game .info h2 {
     font-family: var(--Font2);
     color: var(--White1);
@@ -232,11 +242,17 @@
     }
     .AboutGame .con .about .game .info h3 {
         margin-top: 8px;
+        font-size: 16px;
     }
     .AboutGame .con .stiky .box .btn {
         align-items: center;
     }
     .AboutGame .con .stiky .box .btn button {
         width: 95%;
+    }
+    .AboutGame .con .about .game .info .name {
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
     }
 }

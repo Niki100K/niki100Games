@@ -55,7 +55,7 @@ const Profile = () => {
     <NavBar />
     <div className='Profile'>
 
-      <div className='section'>
+      <div className='section' ref={cardWidth}>
         <div className='header'>
           <h2>My Dashboard</h2>
         </div>
@@ -177,7 +177,7 @@ const Profile = () => {
             <div className='text'>
               <h2>Your Cart</h2>
             </div>
-            <div className='cart' ref={cardWidth}>
+            <div className='cart'>
               <div className='games'>
                 {quantityGames.map((info, index) => (
                   <div className='game' key={index}>

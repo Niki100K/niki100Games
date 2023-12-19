@@ -32,7 +32,10 @@ const AboutGame = () => {
                     <img src={gameData.image} alt="" />
                 </div>
                 <div className='info'>
-                    <h2>{gameData.name}</h2>
+                    <div className='name'>
+                        <h2>{gameData.name}</h2>
+                        <span>{gameData.price}$</span>
+                    </div>
                     <strong>{gameData.category}</strong>
                     <h3>Description</h3>
                     <p>{gameData.description}</p>
