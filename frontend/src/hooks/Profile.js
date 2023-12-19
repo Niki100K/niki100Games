@@ -280,16 +280,16 @@ const Profile = () => {
   const [gameWidth, setGameWidth] = useState(0)
   const handleChangeWidth = useCallback(() => {
     let width = cardWidth.current.clientWidth
-    if (width > 980) {
+    if (window.innerWidth > 980) {
       setGameWidth(width / 5.2)
     }
-     if (width <= 980) {
+     if (window.innerWidth <= 980) {
       setGameWidth(width / 3.2)
     } 
-    if (width <= 680) {
+    if (window.innerWidth <= 680) {
       setGameWidth(width / 2.2)
     }
-    if (width <= 420) {
+    if (window.innerWidth <= 420) {
       setGameWidth(width / 3.2)
     }
   }, [])
