@@ -239,6 +239,7 @@
     border: none;
     outline: none;
     border-bottom: 2px solid var(--Dark1);
+    background: transparent;
     padding: 0 30px;
 }
 .loginBar .box .input label {
