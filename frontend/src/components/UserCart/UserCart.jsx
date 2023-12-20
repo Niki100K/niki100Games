@@ -7,7 +7,7 @@ import { FaTrashAlt } from "react-icons/fa";
 
 import UserCartJS from '../../hooks/UserCart';
 const UserCart = () => {
-  const { isActive, userData } = useContext(ActiveStatus)
+  const { isActive, userData, cartData } = useContext(ActiveStatus)
   const navigate = useNavigate()
   const {
     conWidth,
@@ -28,6 +28,12 @@ const UserCart = () => {
       navigate('/')
     }
   }, [isActive, navigate])
+
+  useEffect(() => {
+    if (cartData.length === 0) {
+      navigate('/')
+    }
+  }, [navigate, cartData])
 
   return (
     <>
