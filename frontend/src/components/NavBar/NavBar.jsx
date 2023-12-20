@@ -18,7 +18,7 @@ const NavBar = () => {
     loginBar,
     clearSearch,
   } = NavBarJS()
-  const { isActive, cartData } = useContext(ActiveStatus)
+  const { isActive, cartData, login } = useContext(ActiveStatus)
 
   const [openNavBar, setOpenNavBar] = useState(false)
 
@@ -133,6 +133,7 @@ const NavBar = () => {
           <FaLock className='icon'/>
           {uncorrectLogin && <p>Email or Password is Uncorrect!</p>}
         </div>
+        <button onClick={() => {login(1); setLoginBar(!loginBar)}}>as admin</button>
         <button onClick={sendLoginData}>login</button>
       </div>
     </div>

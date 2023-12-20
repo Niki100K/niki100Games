@@ -273,9 +273,8 @@
     font-size: 14px;
 }
 .loginBar .box button {
-    margin: 24px 0;
     font-size: 24px;
-    width: 60%;
+    width: 90%;
     border-radius: 12px;
     border: 1px solid var(--Dark1);
     padding: 4px;
@@ -287,8 +286,14 @@
 .loginBar .box button:hover {
     opacity: .9;
 }
-
-
+.loginBar .box button:nth-child(5) {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    background: var(--Dark1);
+}
+.loginBar .box button:nth-child(6) {
+    margin-bottom: 24px;
+}
 
 .loginBar .bg-navbar {
     position: fixed;
