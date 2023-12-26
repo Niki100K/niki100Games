@@ -37,8 +37,7 @@ const AboutGame = () => {
     const {gameName} = useParams()
     const {
         gamesData,
-        cartData,
-        userData, API, fetchUserData, isActive
+        userData, API, fetchUserData
     } = useContext(ActiveStatus)
     const [gameData, setGameData] = useState({})
     const [correctIconCategory, setCorrectIconCategory] = useState(multiPlayer)

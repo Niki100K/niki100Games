@@ -1,33 +1,8 @@
-import React, { useCallback, useContext, useEffect, useRef, useState } from 'react'
+import React, { useContext } from 'react'
 import './AboutGame.css'
-import { useParams, Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { ActiveStatus } from '../../ActiveStatus'
-import { FaStar, FaHeadset } from "react-icons/fa";
-import { RxCountdownTimer } from "react-icons/rx";
-import { FaBasketShopping } from "react-icons/fa6";
-import { IoShieldCheckmarkOutline } from "react-icons/io5";
-import axios from 'axios'
-
-import multiPlayer from '../../assets/multiPlayer.png'
-import Simulation from '../../assets/Simulation.png'
-import Adventure from '../../assets/Adventure.png'
-import Strategy from '../../assets/strategy.png'
-import Survival from '../../assets/Survival.png'
-import Fighting from '../../assets/Fighting.png'
-import Hunting from '../../assets/Hunting.png'
-import Action from '../../assets/Action.png'
-import Puzzle from '../../assets/Puzzle.png'
-import Sports from '../../assets/Sports.png'
-import BattleRoyale from '../../assets/Battle Royale.png'
-import RolePlaying from '../../assets/Role-Playing.png'
-import FirstPerson from '../../assets/First-Person.png'
-import OpenWorld from '../../assets/Open World.png'
-
-import threads from '../../assets/threads.png'
-import twitter from '../../assets/twitter.png'
-import instagram from '../../assets/instagram.png'
-import facebook from '../../assets/facebook.png'
-import telegram from '../../assets/telegram.png'
+import { FaStar } from "react-icons/fa";
 
 import discount from '../../assets/discount.png'
 
