@@ -25,9 +25,13 @@ body {
 }
 .backgroundLight {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background: #4610bd;
+}
+.backgroundLight img {
+  height: 100%;
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 

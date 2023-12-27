@@ -5,6 +5,7 @@ import { ActiveStatus } from '../../ActiveStatus'
 import { FaStar, FaInfoCircle } from "react-icons/fa";
 
 import discount from '../../assets/discount.png'
+import backgroundAboutGame from '../../assets/backgroundAboutGame.jpg'
 
 import AboutGameJS from '../../hooks/AboutGame';
 
@@ -32,7 +33,9 @@ const AboutGame = () => {
 
   return (
     <>
-    {/* <div className='background'></div> */}
+    <div className='backgroundLight'>
+        <img src={backgroundAboutGame} alt="" />
+    </div>
     <div className='AboutGame'>
         <div className='con' ref={gameRef}>
             <div className='games'>
