@@ -27,14 +27,9 @@ const AboutGame = () => {
         isActive,
         cartData,
         gamesData,
-        setOpenNavBar,
-        openNavBar,
         setLoginBar, loginBar,
     } = useContext(ActiveStatus)
 
-    useEffect(() => {
-        console.log(openNavBar);
-    }, [openNavBar])
   return (
     <>
     {/* <div className='background'></div> */}
