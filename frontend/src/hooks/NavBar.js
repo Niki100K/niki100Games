@@ -4,9 +4,8 @@ import axios from 'axios'
 
 const NavBar = () => {
 
-  const { login, gamesData, API } = useContext(ActiveStatus)
+  const { login, gamesData, API, setLoginBar, loginBar } = useContext(ActiveStatus)
 
-  const [loginBar, setLoginBar] = useState(false)
 
   const [values, setValues] = useState({
     email: '',
@@ -70,14 +69,13 @@ const NavBar = () => {
     }))
   }
 
+
   return {
     handleChangeValues,
     uncorrectLogin,
     sendLoginData,
     filteredGames,
     values,
-    setLoginBar,
-    loginBar,
     clearSearch,
   }
 }

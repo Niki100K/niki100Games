@@ -64,6 +64,7 @@ export const ActiveProvider = ({ children }) => {
       console.error(error);
     }
   }
+  const [loginBar, setLoginBar] = useState(false)
 
     return(
         <ActiveStatus.Provider value={{
@@ -79,6 +80,8 @@ export const ActiveProvider = ({ children }) => {
           fetchUserData,
           API,
           orderedGames,
+          setLoginBar,
+          loginBar
         }}>
             { children }
         </ActiveStatus.Provider>

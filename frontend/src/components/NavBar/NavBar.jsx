@@ -14,11 +14,9 @@ const NavBar = () => {
     sendLoginData,
     filteredGames,
     values,
-    setLoginBar,
-    loginBar,
     clearSearch,
   } = NavBarJS()
-  const { isActive, cartData, login } = useContext(ActiveStatus)
+  const { isActive, cartData, login, setLoginBar, loginBar } = useContext(ActiveStatus)
 
   const [openNavBar, setOpenNavBar] = useState(false)
 

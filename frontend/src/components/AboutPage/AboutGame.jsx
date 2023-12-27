@@ -1,8 +1,8 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import './AboutGame.css'
 import { Link, useNavigate } from 'react-router-dom'
 import { ActiveStatus } from '../../ActiveStatus'
-import { FaStar } from "react-icons/fa";
+import { FaStar, FaInfoCircle } from "react-icons/fa";
 
 import discount from '../../assets/discount.png'
 
@@ -27,8 +27,14 @@ const AboutGame = () => {
         isActive,
         cartData,
         gamesData,
+        setOpenNavBar,
+        openNavBar,
+        setLoginBar, loginBar,
     } = useContext(ActiveStatus)
 
+    useEffect(() => {
+        console.log(openNavBar);
+    }, [openNavBar])
   return (
     <>
     {/* <div className='background'></div> */}
@@ -55,25 +61,37 @@ const AboutGame = () => {
                             <strong>{gameData.price}$</strong>
                             <img src={discount} alt="" />
                         </div>
+                        <div className='more'>
+                            <p>Free update to PS5:</p>
+                            <span>18+</span>
+                        </div>
+                        <div className='more'>
+                            <p>PEGI rating:</p>
+                            <span>Yes</span>
+                        </div>
                     </div>
                 </div>
                 <div className='mobileOrder'>
                     <div className='header'>
                         <h2>{gameData.price}</h2>
                         <p>$</p>
+                        <p><FaInfoCircle className='info' title='Price is not final!'/>Price is not final</p>
                     </div>
                     <div className='btn'>
-                    {!isActive &&
-                        <button>Login</button>
-                    }
+                    {!isActive ? (
+                        <button onClick={() => setLoginBar(!loginBar)}>Login</button>
+                        ) : (
+                        <>
                     {!cartData.filter(game => game.name === gameData.name).length > 0 ? (
                         <button onClick={handleAddGame}>{!loadingData ? 'Add Game' : 'Adding'}</button>
-                    ) : (
-                        <button onClick={handleRemoveGame}>{!loadingData ? `Remove` : 'Removing'}</button>
-                    )}
+                        ) : (
+                            <button onClick={handleRemoveGame}>{!loadingData ? `Remove` : 'Removing'}</button>
+                            )}
                     {cartData.length > 0 &&
                         <button onClick={() => navigate('/usercart')}>{cartData.length > 0 && <div className='circle'>{cartData.length}</div>}Check Cart</button>
                     }
+                    </>
+                    )}
                     </div>
                 </div>
                 <div className='recommended' ref={recommendGameRef}>
@@ -119,19 +137,23 @@ const AboutGame = () => {
                 <div className='price'>
                     <h2>{gameData.price}</h2>
                     <p>$</p>
+                    <p><FaInfoCircle className='info' title='Price is not final!'/>Price is not final</p>
                 </div>
                 <div className='btn'>
-                    {!isActive &&
-                        <button>Login</button>
-                    }
+                    {!isActive ? (
+                        <button onClick={() => setLoginBar(!loginBar)}>Login</button>
+                        ) : (
+                        <>
                     {!cartData.filter(game => game.name === gameData.name).length > 0 ? (
                         <button onClick={handleAddGame}>{!loadingData ? 'Add Game' : 'Adding'}</button>
-                    ) : (
-                        <button onClick={handleRemoveGame}>{!loadingData ? `Remove` : 'Removing'}</button>
-                    )}
+                        ) : (
+                            <button onClick={handleRemoveGame}>{!loadingData ? `Remove` : 'Removing'}</button>
+                            )}
                     {cartData.length > 0 &&
                         <button onClick={() => navigate('/usercart')}>{cartData.length > 0 && <div className='circle'>{cartData.length}</div>}Check Cart</button>
                     }
+                    </>
+                    )}
                 </div>
                 <div className='icons'>
                     {icons.map((line, index) => (

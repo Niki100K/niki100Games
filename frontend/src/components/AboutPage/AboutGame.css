@@ -68,26 +68,35 @@
     font-size: 1.5rem;
 }
 .AboutGame .con .games .game .text .category img {
-    width: 40px;
+    width: 30px;
     margin-left: 8px;
 }
 .AboutGame .con .games .game .text .discount {
     width: 100%;
-    padding: .5rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     border-radius: 8px;
-    margin: 1rem 0;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 .AboutGame .con .games .game .text .discount strong {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--Dark1);
 }
 .AboutGame .con .games .game .text .discount img {
-    width: 40px;
+    width: 30px;
     margin-left: 8px;
+}
+.AboutGame .con .games .game .text .more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.AboutGame .con .games .game .text .more p {
+    font-family: var(--Font2);
+}
+.AboutGame .con .games .game .text .more span {
+    margin-left: 8px;
+    color: orange;
 }
 
 
@@ -237,6 +246,14 @@
     color: var(--Dark1);
     margin-left: 4px;
 }
+.AboutGame .con .sticky .price p:nth-child(3) {
+    font-family: var(--Font2);
+    margin-left: 8px;
+}
+.AboutGame .con .sticky .price p .info {
+    color: var(--Middle1);
+    cursor: help;
+}
 .AboutGame .con .sticky .btn {
     width: 100%;
     display: flex;
@@ -324,6 +341,20 @@
 .AboutGame .con .mobileOrder .header {
     padding: 0 .5rem;
     display: flex;
+}
+.AboutGame .con .mobileOrder .header h2 {
+    color: var(--Middle1);
+    font-family: var(--Font3);
+}
+.AboutGame .con .mobileOrder .header p {
+    font-family: var(--Font2);
+}
+.AboutGame .con .mobileOrder .header p:nth-child(3) {
+    margin-left: 8px;
+}
+.AboutGame .con .mobileOrder .header p .info {
+    color: var(--Middle1);
+    cursor: help;
 }
 .AboutGame .con .mobileOrder .btn {
     width: 50%;

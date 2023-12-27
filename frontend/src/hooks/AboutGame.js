@@ -99,13 +99,13 @@ const AboutGame = () => {
         const width2 = recommendGameRef.current.clientWidth
         setGameImgSize(width1 / 5)
         setRecommendedGGameImgSize(width2 / 4.2)
-        if (window.innerWidth < 480) {
+        if (window.innerWidth <= 480) {
         setGameImgSize(width1 / 3)
         }
-        if (window.innerWidth < 420) {
+        if (window.innerWidth <= 420) {
         setRecommendedGGameImgSize(width2 / 3)
         }
-        if (window.innerWidth < 320) {
+        if (window.innerWidth <= 320) {
             setRecommendedGGameImgSize(width2 / 2)
             }
     }, [])
@@ -118,9 +118,6 @@ const AboutGame = () => {
             window.removeEventListener("resize", handleResize)
         }
     }, [handleResize])
-    useEffect(() => {
-        console.log(gameData);
-    }, [gameData])
 
     const socials = [
         {
